@@ -67,6 +67,24 @@ class Tiempo(
         return Tiempo(horas, minutos, segundos)
     }
 
+    fun copiar(t:Tiempo):Tiempo {
+        return Tiempo(t.horas, t.segundos, t.segundos)
+    }
+
+    fun sumar(t:Tiempo):Tiempo? {
+        val segundosTotalesT = t.pasarSegundos()
+        val segundosTotalesOg = this.pasarSegundos()
+        val segundosTotalesJuntos = segundosTotalesOg + segundosTotalesT
+        return if (segundosTotalesJuntos > 86399) null else Tiempo(segundosTotalesJuntos / 3600, (segundosTotalesJuntos % 3600) / 60, ((segundosTotalesJuntos % 3600) / 60) % 60)
+    }
+
+    fun restar(t:Tiempo):Tiempo? {
+        val segundosTotalesT = t.pasarSegundos()
+        val segundosTotalesOg = this.pasarSegundos()
+        val segundosTotalesJuntos = segundosTotalesOg + segundosTotalesT
+        return if (segundosTotalesJuntos < 0) null else Tiempo(segundosTotalesJuntos / 3600, (segundosTotalesJuntos % 3600) / 60, ((segundosTotalesJuntos % 3600) / 60) % 60)
+    }
+
     override fun toString(): String {
         return "${horas}h ${minutos}m ${segundos}s"
     }
