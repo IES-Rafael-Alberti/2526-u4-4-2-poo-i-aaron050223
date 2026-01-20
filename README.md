@@ -151,9 +151,9 @@ Horas Comparadas (1h 0m 0s la hora comparada) >> 1
 Hora Copiada 1 >> 12h 0m 0s
 Hora Copiada 2 >> 1h 0m 0s
 Hora Sumada >> 13h 0m 0s
-Hora Restada >> 13h 0m 0s
+Hora Restada >> 11h 0m 0s
 Mayor >> true
-Menos >> false
+Menor >> false
 ```
 
 ## Conclusiones
