@@ -81,7 +81,7 @@ class Tiempo(
     fun restar(t:Tiempo):Tiempo? {
         val segundosTotalesT = t.pasarSegundos()
         val segundosTotalesOg = this.pasarSegundos()
-        val segundosTotalesJuntos = segundosTotalesOg + segundosTotalesT
+        val segundosTotalesJuntos = segundosTotalesOg - segundosTotalesT
         return if (segundosTotalesJuntos < 0) null else Tiempo(segundosTotalesJuntos / 3600, (segundosTotalesJuntos % 3600) / 60, ((segundosTotalesJuntos % 3600) / 60) % 60)
     }
 
