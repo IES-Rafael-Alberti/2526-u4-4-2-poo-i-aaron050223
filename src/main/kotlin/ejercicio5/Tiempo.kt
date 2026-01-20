@@ -85,6 +85,24 @@ class Tiempo(
         return if (segundosTotalesJuntos < 0) null else Tiempo(segundosTotalesJuntos / 3600, (segundosTotalesJuntos % 3600) / 60, ((segundosTotalesJuntos % 3600) / 60) % 60)
     }
 
+    fun esMayorQue(t:Tiempo):Boolean {
+        val segundosTotalesT = t.pasarSegundos()
+        val segundosTotalesOg = this.pasarSegundos()
+        return when {
+            segundosTotalesOg > segundosTotalesT -> true
+            else -> false
+        }
+    }
+
+    fun esMenorQue(t:Tiempo):Boolean {
+        val segundosTotalesT = t.pasarSegundos()
+        val segundosTotalesOg = this.pasarSegundos()
+        return when {
+            segundosTotalesT > segundosTotalesOg -> true
+            else -> false
+        }
+    }
+
     override fun toString(): String {
         return "${horas}h ${minutos}m ${segundos}s"
     }

@@ -34,4 +34,6 @@ fun main() {
     println("Hora Copiada 2 >> ${tiempoOg.copiar(tAuxiliar)}")
     println("Hora Sumada >> ${tiempoOg.sumar(tAuxiliar)}")
     println("Hora Restada >> ${tiempoOg.restar(tAuxiliar)}")
+    println("Mayor >> ${tiempoOg.esMayorQue(tAuxiliar)}")
+    println("Menos >> ${tiempoOg.esMenorQue(tAuxiliar)}")
 }
