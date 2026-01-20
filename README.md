@@ -13,84 +13,155 @@ Apóyate en los siguientes recursos para realizar la práctica:
 
 ## Identificación de la Actividad
 
-- **ID de la Actividad:** [ID de la actividad]
-- **Módulo:** [Nombre del módulo] (`PROG`, `IS`, `EDES`, etc.)
-- **Unidad de Trabajo:** [Número y nombre de la unidad de trabajo]
-- **Fecha de Creación:** [Fecha de creación]
-- **Fecha de Entrega:** [Fecha de entrega]
+- **ID de la Actividad:** 4.2: Ejercicios POO I (RA2.b...i)
+- **Módulo:** [Nombre del módulo] `PROG`
+- **Unidad de Trabajo:** Unidad 4
+- **Fecha de Creación:** 15/01/26
+- **Fecha de Entrega:** 19/01/26
 - **Alumno(s):**
-  - **Nombre y Apellidos:** [Nombre y Apellidos del alumno o integrantes del grupo]
-  - **Correo electrónico:** [Correo electrónico g.educaand.es]
-  - **Iniciales del Alumno/Grupo:** [Iniciales del alumno o del grupo]
+  - **Nombre y Apellidos:** Aarón Gallardo Canto
+  - **Correo electrónico:** agalcan1410g.educaand.es
+  - **Iniciales del Alumno/Grupo:** AGC
 
 ## Descripción de la Actividad
 
-[Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
+Ejercicio para practicar el uso de clases en Kotlin
 
 ## Instrucciones de Compilación y Ejecución
 
 1. **Requisitos Previos:**
 
-   - [Lenguaje de programación y versión]
-   - [Entorno de desarrollo o dependencias necesarias]
+   - Kotlin
+   - IntelliJ IDEA
+
 2. **Pasos para Compilar el Código:**
 
    ```bash
-   [Comando para compilar el código]
+   kotlinc
    ```
 3. **Pasos para Ejecutar el Código:**
 
    ```bash
-   [Comando para ejecutar la aplicación]
-   ```
-4. **Ejecución de Pruebas:**
-
-   ```bash
-   [Comandos para ejecutar pruebas, si las hubiera]
+   java x.java
    ```
 
 ## Desarrollo de la Actividad
 
-### Descripción del Desarrollo
-
-[Explicación de cómo se ha abordado el desarrollo de la actividad, incluyendo las decisiones de diseño, estructura del código y enfoque de resolución de problemas. Se recomienda adjuntar diagramas o capturas de pantalla si es necesario.]
-
 ### Código Fuente
 
-[Aquí se incluirá un enlace directo a los archivos de código fuente en el repositorio, por ejemplo, si se está usando GitHub: `src/main.kt` o algún enlace directo.]
+- [Ejercicio 1](src/main/kotlin/ejercicio1)
 
-[Si hay varios ejercicios, habrá una documentación, por cada uno de los ejercicios.]
-[Por cada ejercicio, habrá enlaces embebidos de código a las clases principales y programa principal `main` ]
+- [Ejercicio 2 y 3](src/main/kotlin/ejercicio2y3)
+
+- [Ejercicio 4](src/main/kotlin/ejercicio4)
+
+- [Ejercicio 5](src/main/kotlin/ejercicio5)
+
 
 ### Ejemplos de Ejecución
 
-- **Entrada 1:** Descripción de la entrada y valor de prueba.
-- **Salida Esperada 1:** Explicación de la salida esperada y el resultado de la prueba.
+En los que hay que introducir los datos mediante consola, muestro esa información unicamente. En los que no, muestro el `main` completo.
 
-### Resultados de Pruebas
+#### Ejercicio 1
 
-[Aquí se detallará cómo se ha verificado la funcionalidad del código, incluyendo resultados de pruebas automatizadas o manuales, en caso de que las haya.]
+- **Entrada:** 
 
-## Documentación Adicional
+https://github.com/IES-Rafael-Alberti/2526-u4-4-2-poo-i-aaron050223/blob/67a6f4d2f2c5a0c49f6c6413907722ae8a2c1fef/src/main/kotlin/ejercicio1/main.kt#L3-L6
 
-- **Manual de Usuario:** [Enlace a la documentación del usuario, si existe]
-- **Autorización de Permisos:** Verificar que el profesor tenga permisos de lectura en el repositorio para revisar el código.
+- **Salida Esperada:** 
+
+```
+Base >> 5
+Altura >> 10
+Area >> 50
+Perimetro >> 30
+```
+
+#### Ejercicio 2 y 3
+
+- **Entrada:**
+
+```
+Nombre de la Persona 1 >> Paco
+```
+
+- **Salida Esperada:**
+
+```
+--- EJERCICIO 1 ---
+Nombre de la Persona 1 >> Paco
+--- PERSONA 1 ---
+Peso >> 90.0 | Altura >> 1.9 | Nombre >> Paco
+--- PERSONA 3 ---
+Peso >> 91.0 | Altura >> 1.8 | IMC >> 28.086419753086417
+--- PERSONA 2 Y 3 ---
+Peso >> 70.0 | Altura >> 1.8 | Nombre >> Sehito
+Peso >> 91.0 | Altura >> 1.8 | Nombre >> Ramoni
+¿Son iguales? >> No
+--- EJERCICIO 2 ---
+Ramoni con una altura de 1.8m (Por encima de la media) y un peso 91.0kg (Por encima de la media) tiene un IMC de 28.086419753086417 (sobrepeso)
+```
+
+#### Ejercicio 4
+
+- **Entrada:**
+
+https://github.com/IES-Rafael-Alberti/2526-u4-4-2-poo-i-aaron050223/blob/67a6f4d2f2c5a0c49f6c6413907722ae8a2c1fef/src/main/kotlin/ejercicio4/main.kt#L3-L34
+
+- **Salida Esperada:**
+
+```
+ERROR: La marca no puede ser nula ni estar vacía.
+ERROR: El número de caballos debe estar entre 70 y 700
+ERROR: El número de puertas debe estar entre 3 y 5
+ERROR: La matrícula debe tener 7 caracteres.
+ERROR: El color no puede ser nulo ni estar vacío.
+```
+
+#### Ejercicio 5
+
+- **Entrada:**
+
+```
+--- TIEMPO 1 ---
+Hora >> 12
+Minutos >> 
+Segundos >> 
+--- TIEMPO 2 ---
+Hora >> 1
+Minutos >> 
+Segundos >> 
+```
+
+- **Salida Esperada:**
+
+```
+--- TIEMPO 1 ---
+Hora >> 12
+Minutos >> 
+Segundos >> 
+--- TIEMPO 2 ---
+Hora >> 1
+Minutos >> 
+Segundos >> 
+----------------
+Hora incrementada (1h 0m 0s más) >> 13h 0m 0s
+Hora decrementada (1h 0m 0s menos) >> 12h 0m 0s
+Horas Comparadas (1h 0m 0s la hora comparada) >> 1
+Hora Copiada 1 >> 12h 0m 0s
+Hora Copiada 2 >> 1h 0m 0s
+Hora Sumada >> 13h 0m 0s
+Hora Restada >> 13h 0m 0s
+Mayor >> true
+Menos >> false
+```
 
 ## Conclusiones
 
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
+Con el Ejercicio 5 he aprendido bastante. Me ha costado sacarlo y he visto cosas que no sabia o que habia pasado por alto con otros ejercicios.
 
 ## Referencias y Fuentes
 
-[Aquí se listarán las fuentes consultadas para el desarrollo de la actividad, tales como documentación oficial, artículos, o cualquier recurso externo relevante.]
+- [Gemini](https://gemini.google.com/app?hl=es-ES)
 
-### Notas Adicionales:
-
-1. **Nombres de Archivos y Repositorios:**
-   - Asegúrate de que el nombre del archivo o repositorio siga la estructura definida: `XXX-idActividad-Iniciales`.
-2. **Permisos:**
-   - Verifica que el profesor tenga los permisos necesarios para acceder al repositorio o documento.
-3. **Formato:**
-   - Si se entrega en formato PDF o Google Docs, asegúrate de cumplir con el mínimo y máximo de folios establecidos.
-4. **Compilación y Ejecución:**
-   - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
+- [Revilofe](https://revilofe.github.io/section1/u04/practica/PROG-U4.-Practica002-Guia45/#guia-de-ayuda-para-realizar-los-apartados-5-al-13-del-ejercicio-45-tiempo)
