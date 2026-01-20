@@ -53,6 +53,20 @@ class Tiempo(
         }
     }
 
+    fun comparar(t:Tiempo):Int {
+        val segundosTotalesT = t.pasarSegundos()
+        val segundosTotalesOg = this.pasarSegundos()
+        return when {
+            segundosTotalesOg < segundosTotalesT -> -1
+            segundosTotalesOg == segundosTotalesT -> 0
+            else -> 1
+        }
+    }
+
+    fun copiar():Tiempo {
+        return Tiempo(horas, minutos, segundos)
+    }
+
     override fun toString(): String {
         return "${horas}h ${minutos}m ${segundos}s"
     }
