@@ -35,5 +35,5 @@ fun main() {
     println("Hora Sumada >> ${tiempoOg.sumar(tAuxiliar)}")
     println("Hora Restada >> ${tiempoOg.restar(tAuxiliar)}")
     println("Mayor >> ${tiempoOg.esMayorQue(tAuxiliar)}")
-    println("Menos >> ${tiempoOg.esMenorQue(tAuxiliar)}")
+    println("Menor >> ${tiempoOg.esMenorQue(tAuxiliar)}")
 }
